@@ -87,14 +87,19 @@
  			opacity: 0.1; 
  		} 
 
- 	.profile-photo {
+ 		.profile-photo {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     border: 6px solid rgba(255, 255, 255, 0.2);
-    background: url('https://media.licdn.com/dms/image/v2/D4E03AQGybE6_Ks5t7w/profile-displayphoto-scale_400_400/B4EZmZPrivKcAg-/0/1759212653447?e=1762387200&v=beta&t=koYhdUz_dm38NUlScfXy97DPuflc8wbqc...') center center/cover no-repeat;
+    background: url('https://media.licdn.com/dms/image/v2/D4E03AQGybE6_Ks5t7w/profile-displayphoto-scale_400_400/B4EZmZPrivKcAg-/0/1759212653447?e=1762387200&v=beta&t=koYhdUz_dm38NUlScfXy97DPuflc8wbqcAkhBLJFf-A') center/cover, rgba(255, 255, 255, 0.1);
+   /* display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.7); */
     margin: 0 auto 2rem;
-}
+} 
 
  		.typing-animation { 
  			border-right: 2px solid var(--accent-color); 
@@ -431,9 +436,7 @@
  	<section class="hero"> 
  		<div class="container"> 
  			<div class="text-center fade-in"> 
- 				<div class="profile-photo"> 
- 					<i class="fas fa-user"></i> 
- 				</div> 
+ 				<div class="profile-photo"></div> 
  				<h1 class="text-4xl md:text-6xl font-bold heading-font mb-4"> 
  					Bassem Gebraeel, B.COMM 
  				</h1> 
